@@ -67,12 +67,16 @@ color: #fff;
 }
 
 .banner{
-height: 100%;
 width: 100%;
 position: absolute;
 background-size: cover;
 top: 0;
-z-index: -1;
+bottom: 0;
+right: 0;
+left: 0;
+padding: auto;
+display: flex;
+
 }
 
 .section{
@@ -87,7 +91,7 @@ z-index: -1;
 .img img{
     height: 31rem;
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     transform: translateX(-50);
     position: absolute;
     top: -30rem;
@@ -95,6 +99,7 @@ z-index: -1;
     border-radius: 50% 50% 37% 63% / 41% 39% 61% 59% ;
     opacity: 100%;
     margin-top: 15vh;
+    padding: auto;
     
     }
     
@@ -274,4 +279,9 @@ top: -5rem;
         background-image: url(images/carl3.jpg);
     }
 }
+ @media screen and (max-width:820px){
+    .img img{
+        flex-direction: column;
+    }
+ }
 
